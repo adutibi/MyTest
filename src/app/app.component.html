@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+<mat-toolbar-row>
+  <button mat-icon-button (click)="Update()" >
+    <mat-icon >menu</mat-icon>
+  </button>
+  <h1>Toolbar</h1>
+  <mat-toolbar-row><h1>Home</h1></mat-toolbar-row>
+  <mat-toolbar-row><h1>Home</h1></mat-toolbar-row>
+
+</mat-toolbar-row>
+</mat-toolbar>
+
+
+
+ <mat-sidenav-container>
+  <mat-sidenav  #sidenav mode="side" opened="false">
+    <mat-nav-list>
+      <a mat-list-item>Home</a>
+      <a mat-list-item>Shifts</a>
+      <a mat-list-item>Logout</a>
+      <a mat-list-item>Logout</a>
+
+    </mat-nav-list>
+
+  </mat-sidenav>
+ 
+  <mat-sidenav-content>
+    <div style="height:90vh"></div>
+    <router-outlet>
+
+    </router-outlet>
+  </mat-sidenav-content>
+ </mat-sidenav-container> 
+
